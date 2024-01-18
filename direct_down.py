@@ -1,9 +1,11 @@
 import requests
+import sys
+
 ary = open("downs.txt","r").readlines()
 
 
 for i in range(len(ary)):
-    if i<=4:
+    if i<=(int(sys.argv[1])-1):
         print("downloading ",i)
         r = requests.get(ary[i], allow_redirects=True)
         g= str(i)+".jpg"
