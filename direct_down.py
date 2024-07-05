@@ -1,6 +1,6 @@
 import requests
 import sys
-#simple chnage 2
+
 ary = open("downs.txt","r").readlines()
 
 
